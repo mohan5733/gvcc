@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section Styles */
+  .product-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .product-gallery {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  #main-image {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+  }
+  
+  .thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnails img {
+    width: 80px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .thumbnails img:hover {
+    border-color: #000;
+  }
+  
+  .product-details {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+  }
+  
+  .price {
+    color: green;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-control button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .quantity-control input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .add-to-cart:hover {
+    background-color: darkorange;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .social-media a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .newsletter input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-page {
+      flex-direction: column;
+    }
+  
+    .product-details {
+      margin-left: 0;
+    }
+  }
+  

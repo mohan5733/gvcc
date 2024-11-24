@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">E-Shop</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Product Section -->
+  <main class="product-page">
+    <div class="product-gallery">
+      <img id="main-image" src="images/product1-large.jpg" alt="Product Image">
+      <div class="thumbnails">
+        <img src="images/product1-thumb.jpg" alt="Thumbnail 1" onclick="updateImage(this)">
+        <img src="images/product2-thumb.jpg" alt="Thumbnail 2" onclick="updateImage(this)">
+        <img src="images/product3-thumb.jpg" alt="Thumbnail 3" onclick="updateImage(this)">
+      </div>
+    </div>
+    <div class="product-details">
+      <h1>Product Name</h1>
+      <p class="price">$99.99</p>
+      <p class="description">This is a short description of the product.</p>
+      <label for="size">Size:</label>
+      <select id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+      <div class="quantity-control">
+        <button onclick="changeQuantity(-1)">-</button>
+        <input id="quantity" type="number" value="1" min="1">
+        <button onclick="changeQuantity(1)">+</button>
+      </div>
+      <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-media">
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://x.com/i/flow/login?lang=en">Twitter</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+    <div class="newsletter">
+      <input type="email" placeholder="Subscribe to our newsletter">
+      <button>Subscribe</button>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="Product.js"></script>
+</body>
+</html>
